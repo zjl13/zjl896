@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾景麟的个人主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <video autoplay muted loop id="background-video">
+        <source src="image/Redial.mp4" type="video/mp4">
+        您的浏览器不支持HTML5视频。
+    </video>
+    <audio autoplay loop id="background-audio">
+        <source src="music.mp3" type="audio/mpeg">
+        您的浏览器不支持音频元素。
+    </audio>
+   
+    <header>
+        <main>
+            <section class="mine">
+                <h1>曾景麟的个人主页</h1>
+                <h2><a href="https://qiuhan47.github.io/fyc868.github.io/web/dormitory.html">寝室主页</a></h2>
+            </section>
+            <nav>
+                <button class="hamburger" onclick="toggleMenu()">☰ 菜单</button>
+                <section class="something" id="nav-links">
+                    <ul>
+                        <li><a href="https://zjl13.github.io/new/">兴趣爱好</a></li>  
+                        <li><a href="https://zjl13.github.io/movie/">喜欢的电影</a></li>  
+                        <li><a href="https://zjl13.github.io/hometown/">我的故乡</a></li>  
+                        <li><a href="https://zjl13.github.io/faith/">座右铭</a></li>  
+                        <li><a href="https://zjl13.github.io/zjl123.github.io/">音乐</a></li>  
+                    </ul>
+                </section>
+            </nav>
+        </main>
+    </header>
+    <section class="siu">
+        
+        <p><a href="https://zjl13.github.io/somethingnew/">了解更多个人信息</a></p>   
+    </section>
+    <footer>
+        <p>my website there</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById('nav-links');
+            if (navLinks.style.display === 'block') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

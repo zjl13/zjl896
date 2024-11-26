@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(42, 87, 165, 0.045); 
+    height: 100px;
+    width: 93%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px 50px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: burlywood;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #87CEEB;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+header ul {
+    position: absolute;
+    right: 25vw;
+    top: 8vw;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+h1 {
+    left: 8vw;
+    position: absolute;
+    top: 0;
+    color:  #87CEEB;
+    width: 210px;
+    z-index: 100;
+}
+
+h2 {
+    left: 8vw;
+    position: absolute;
+    top: 8vw;
+    color:  #87CEEB;
+    width: 210px;
+    z-index: 100;
+}
+
+.something {
+    background-color: blueviolet;
+}
+
+.siu {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: burlywood;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    position: relative;
+    z-index: 100;
+}
+
+.siu p {
+    font-size: 25px;
+    margin: 25px 0;
+}
+
+.siu a {
+    color: burlywood;
+    text-decoration: none;
+    border: 1px solid transparent; 
+    font-size: 20px;
+    border-radius: 5px;
+    position: fixed; 
+    top: 110px; 
+    right: 10px; 
+    z-index: 100;
+    transition: border-color 0.3s, color 0.3s; /
+}
+
+.siu a:hover {
+    border: 1px solid burlywood; 
+    color: burlywood;
+}
+
+footer {
+    background-color: rgba(0, 132, 255, 0.8); 
+    color: rgb(0, 43, 128);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    header ul {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        top: 100px;
+        left: 0;
+    }
+
+    header li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    header ul {
+        right: 0;
+        top: 50px;
+    }
+
+    h1,h2 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
